@@ -36,7 +36,7 @@ main {
   margin: 8.75rem 10vw 8.75rem 10vw;
   border-radius: 8px;
   padding: 1.5rem;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
 }
 
 .cardHeadingWrapper {
@@ -97,4 +97,46 @@ main {
 .image {
   height: 30px;
   width: 30px;
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    background: url(./assets/images/background-pattern-desktop.svg) no-repeat
+      top;
+    background-size: contain;
+    background-color: var(--color-pink);
+  }
+
+  .cardWrapper {
+    margin: 8.75rem 22vw 8.75rem 22vw;
+    padding: 2.5rem;
+    width: 80vw;
+  }
+
+  .cardHeadingWrapper {
+    margin-bottom: 2.1875rem;
+  }
+
+  .cardHeadingWrapper img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .cardHeadingWrapper h1 {
+    font-size: 3.5rem;
+  }
+
+  .faqWrapper {
+    margin-bottom: 1.5rem;
+  }
+
+  .faqHeader h2 {
+    font-size: 1.125rem;
+    margin-bottom: 1.8125rem;
+  }
+
+  .faqAnswer {
+    font-size: 1rem;
+    padding-bottom: 24px;
+  }
 }
