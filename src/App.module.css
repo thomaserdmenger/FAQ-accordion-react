@@ -1,0 +1,14 @@
+@font-face {
+  font-family: WorkSans;
+  src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: WorkSans, sans-serif;
+}
