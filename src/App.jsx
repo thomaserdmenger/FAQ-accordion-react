@@ -3,5 +3,11 @@ import Accordion from './components/Accordion';
 import styles from './App.module.css';
 
 export default function App() {
-  return <Accordion />;
+  return (
+    <main>
+      <section>
+        <Accordion />
+      </section>
+    </main>
+  );
 }

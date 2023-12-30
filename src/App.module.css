@@ -3,6 +3,13 @@
   src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
 }
 
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-pink: hsl(275, 100%, 97%);
+  --color-purple: hsl(292, 16%, 49%);
+  --color-purple-dark: hsl(292, 42%, 14%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,4 +18,29 @@
 
 html {
   font-family: WorkSans, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--color-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordionWrapper {
+  background-color: var(--color-white);
+}
+
+.faqHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faqHeader h2 {
+  font-size: 1rem;
+}
+
+.faqBody {
 }
