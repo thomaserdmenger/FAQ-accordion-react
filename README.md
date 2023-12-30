@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![](./assets/images/screenshot.png)
+![](./src/assets/images/screenshot.png)
 
 ## Built with
 
