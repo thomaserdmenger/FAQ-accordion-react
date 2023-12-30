@@ -36,6 +36,7 @@ main {
 .faqHeader {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .faqHeader h2 {
@@ -43,4 +44,9 @@ main {
 }
 
 .faqBody {
+  display: none;
+}
+
+.faqBodyHide {
+  display: block;
 }

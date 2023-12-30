@@ -2,20 +2,25 @@ import * as React from 'react';
 import data from '../assets/data/data';
 import styles from '../App.module.css';
 
-export default function () {
+export default function ({ id, answer, question }) {
+  const [accordionOpen, setAccordionOpen] = React.useState(false);
+
+  const toggleState = (id) => {
+    setAccordionOpen(!accordionOpen);
+  };
+
   return (
-    <>
-      {data.map((faq) => {
-        return (
-          <div key={faq.id}>
-            <div className={styles.faqHeader}>
-              <h2>{faq.question}</h2>
-              <span>+</span>
-            </div>
-            <div className={styles.faqBody}>{faq.answer}</div>
-          </div>
-        );
-      })}
-    </>
+    <div key={id}>
+      <div
+        className={styles.faqHeader}
+        onClick={toggleState}
+      >
+        <h2>{question}</h2>
+        {accordionOpen ? <span>-</span> : <span>+</span>}
+      </div>
+      <div className={accordionOpen ? styles.faqBodyHide : styles.faqBody}>
+        <p>{answer}</p>
+      </div>
+    </div>
   );
 }
